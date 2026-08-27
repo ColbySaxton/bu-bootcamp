@@ -16,6 +16,6 @@ public class Contact {
     }
 
     public String toString() {
-        return "Ada Lovelace | +1 617 555 0101";
+        return this.name + " | " + this.phone;
     }
 }
