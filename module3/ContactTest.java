@@ -26,4 +26,10 @@ public class ContactTest {
     assertTrue(contact.toString().contains("Ada Lovelace"));
     assertTrue(contact.toString().contains("+1 617 555 0101"));
   }
+
+  @Test
+  void toString_differentBetweenTwoInstances() {
+    Contact contact2 = new Contact("Linda Flan", "+1 617 555 1111");
+    assertFalse(contact.toString().equals(contact2.toString()));
+  }
 } 
